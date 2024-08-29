@@ -293,7 +293,25 @@ var accordion = new Accordion($("#accordion"), false);
 
 function enableDarkMode() {
   document.body.classList.toggle("dark-mode");
+  updateThemeIcon();
 }
+
+function updateThemeIcon() {
+  const body = document.body;
+  const lightToggle = document.getElementById('light-toggle');
+  const moonIcon = lightToggle.querySelector('.fa-moon-o');
+  const sunIcon = lightToggle.querySelector('.fa-sun-o');
+
+  if (body.classList.contains('dark-mode')) {
+    moonIcon.style.display = 'none';
+    sunIcon.style.display = 'inline-block';
+  } else {
+    moonIcon.style.display = 'inline-block';
+    sunIcon.style.display = 'none';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', updateThemeIcon);
 
 function detectDayNightMode() {
   const hours = new Date().getHours();
