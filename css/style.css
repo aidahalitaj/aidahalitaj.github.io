@@ -2253,3 +2253,24 @@ span {
     font-weight: 600;
 }
   
+/* CUSTOM CURSOR */
+.toggle-container {
+	display: flex;
+	justify-content: center;
+ }
+ 
+ #light-toggle {
+	cursor: pointer;
+ }
+ 
+ #light-toggle .fa-sun {
+	display: none;
+ }
+ 
+ body.dark-mode #light-toggle .fa-moon {
+	display: none;
+ }
+ 
+ body.dark-mode #light-toggle .fa-sun {
+	display: inline-block;
+ }
