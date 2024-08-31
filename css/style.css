@@ -80,7 +80,7 @@ h2 {
 	margin: 0 0 20px 0;
 }
 h3 {
-	font-family: "Playfair Display", Georgia, serif;
+	font-family: "Montserrat", Georgia, serif;
 	font-weight: 500;
 	margin: 0 0 30px 0;
 }
@@ -2083,7 +2083,7 @@ ul {
 }
 
 .submenu li:hover {
-	background: rgba(255, 255, 0, 0.705);
+	background: rgba(73, 73, 64, 0.705);
 	box-shadow: -1px 1px 51px -20px rgba(0,0,0,1);
 	border-radius: 5px;
 	color: #fff;
@@ -2274,3 +2274,58 @@ span {
  body.dark-mode #light-toggle .fa-sun {
 	display: inline-block;
  }
+
+ #skills-container {
+    display: flex;
+    flex-wrap: wrap;
+	
+}
+
+.skill-category {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.skill-toggle {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-toggle:hover {
+    background-color: #e9ecef;
+}
+
+.skill-toggle::after {
+    content: '\25BC';
+    float: right;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.skill-toggle.active::after {
+    transform: rotate(180deg);
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.skills-list li {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
