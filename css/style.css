@@ -2329,3 +2329,10 @@ span {
 .hidden {
     display: none;
 }
+#publications-accordion .submenu li a {
+    color: black;
+}
+
+#publications-accordion .submenu li a:hover {
+    color: #FFF; /* Replace with your desired hover color */
+}
