@@ -4,7 +4,7 @@ const skillCategories = {
     "Machine Learning & AI": ["Pytorch (Deep Learning Framework)", "Tensorflow (Deep Learning Framework)", "Keras (Neural Network Library)", "Scikit-learn (Machine Learning Library)"],
     "Data Science & Analytics": ["Pandas (Data Manipulation)", "Numpy (Numerical Computation)", "SciPy (Scientific Computing)", "Matplotlib (Data Visualization)", "Seaborn (Statistical Data Visualization)", "Plotly (Interactive Data Visualization)", "Bokeh (Interactive Data Visualization)"],
     "Web Development": ["HTML5", "CSS3"],
-    "Version Control & DevOps": ["Git (Version Control)", "Docker (Containerization)", "AWS (Cloud Services)"]
+    "Version Control & DevOps": ["Git (Version Control)","DVC (Data Version Control)", "Docker (Containerization)", "AWS (Cloud Services)"]
 };
 
 function createSkillsAccordion(categories) {
