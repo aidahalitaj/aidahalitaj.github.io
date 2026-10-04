@@ -168,7 +168,7 @@
     <section class="contact" id="contact">
       <div class="container fade-in">
         <h2 class="section__title">Contact</h2>
-        <p>Feel free to reach out — I'm always open to interesting conversations and collaborations.</p>
+        <p>Feel free to reach out! I'm always open to interesting conversations and collaborations.</p>
         <div class="contact__links">
           <a href="https://github.com/aidahalitaj" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
             <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
@@ -193,11 +193,11 @@
       <button class="modal__close" id="cv-modal-close" aria-label="Close form">&times;</button>
       <h3 class="modal__title" id="cv-modal-title">Request my CV</h3>
       <p class="modal__desc">Leave your details and I'll send it over.</p>
-      <form action="https://formsubmit.co/halitajaida@gmail.com" method="POST" class="modal__form">
-        <input type="hidden" name="_subject" value="CV Request — via Portfolio">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://aidahalitaj.github.io/#resume">
-        <input type="text" name="_honey" style="display:none">
+      <form action="https://api.web3forms.com/submit" method="POST" class="modal__form">
+        <input type="hidden" name="access_key" value="a4b1ef9f-9c4a-4fb5-9fab-62f8a80e7d5c">
+        <input type="hidden" name="subject" value="CV Request — via Portfolio">
+        <input type="hidden" name="redirect" value="https://aidahalitaj.github.io/#resume">
+        <input type="checkbox" name="botcheck" style="display:none">
         <div class="modal__field">
           <label for="cv-name">Name</label>
           <input type="text" id="cv-name" name="name" required placeholder="Your name">
