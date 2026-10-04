@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Aida Halitaj — Data Scientist &amp; AI Engineer. PhD in NLP from Queen Mary University of London. Portfolio showcasing research, projects, and publications.">
+  <title>Dr. Aida Halitaj — Data Scientist &amp; AI Engineer</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <nav aria-label="Main navigation">
+      <a class="nav__logo" href="#hero">Dr. Aida Halitaj</a>
+      <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul class="nav__links" role="menubar">
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#publications" role="menuitem">Publications</a></li>
+        <li role="none"><a href="#resume" role="menuitem">Resume</a></li>
+        <li role="none"><a href="#blog" role="menuitem">Blog</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__content fade-in">
+        <h1>Hi, I'm Dr. Aida Halitaj</h1>
+        <p class="hero__tagline">Data Scientist &amp; AI Engineer</p>
+        <p class="hero__intro">I first got into NLP during my Master's in Taiwan, studying how people express blame on Twitter and discovering that self-blame is a stronger marker of depression than blaming others. That question of what language reveals stayed with me, and motivated my work in NLP.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About Me ===== -->
+    <section class="about bg-warm" id="about">
+      <div class="container fade-in">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__content">
+          <div class="about__photo">
+            <img src="assets/profile.png" alt="Dr. Aida Halitaj" class="about__photo-img">
+          </div>
+          <div class="about__text">
+            <p>I'm a data scientist and AI engineer based in London, currently at <a href="https://www.bt.com/" target="_blank" rel="noopener noreferrer">BT Group</a> where I work on anomaly detection systems for large-scale mobile networks. </p>
+            <p>I hold a PhD in Computer Science from Queen Mary University of London, where my research focused on NLP for citation worthiness detection in low-resource Wikipedia languages. </p>
+            <p>Before my PhD, I led data science at <a href="https://dua.com" target="_blank" rel="noopener noreferrer">Dua AG</a>, driving product decisions through data analysis, ML modeling, and experimentation impacting  user conversions and retention. My background spans NLP, deep learning, MLOps, and cloud infrastructure (AWS, GCP, Spark, Docker), with experience across research, startups, and enterprise.</p>
+            <p>I studied at <a href="https://www.qmul.ac.uk/" target="_blank" rel="noopener noreferrer">Queen Mary University of London</a> (PhD), <a href="https://www.nthu.edu.tw/" target="_blank" rel="noopener noreferrer">National Tsing Hua University</a> in Taiwan (MSc), and the <a href="https://uni-pr.edu/" target="_blank" rel="noopener noreferrer">University of Prishtina</a> (BSc in Mathematics &amp; Computer Science).</p>
+            <p>Outside work, most of my time belongs to my two-year-old son. I'm originally from a small village near <a href="https://www.youtube.com/watch?v=RxeaUh5gVR0" target="_blank" rel="noopener noreferrer">Drini i Bardhë waterfall</a> in Peja, Kosovo and that love of nature stuck. Thailand has been one of my favourite places so far; One day I would love to visit Hawai. When I get the chance, I enjoy swimming, skiing, badminton, and volleyball. I speak Albanian and English.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="projects" id="projects">
+      <div class="container fade-in">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__filters" role="group" aria-label="Filter projects by category" style="display: none;">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="nlp">NLP / Research</button>
+          <button class="filter-btn" data-filter="data-science">Data Science</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+        <div class="projects__grid">
+        </div>
+        <div class="blog__placeholder">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <p>Projects Coming Soon</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Publications ===== -->
+    <section class="publications bg-warm" id="publications">
+      <div class="container fade-in">
+        <h2 class="section__title">Publications</h2>
+        <ol class="publications__list">
+          <li class="publication">
+            <h3 class="publication__title">ALPET: Active Few-Shot Learning for Citation Worthiness Detection in Low-Resource Wikipedia Languages</h3>
+            <p class="publication__authors">Aida Halitaj, Arkaitz Zubiaga</p>
+            <p class="publication__venue">Expert Systems with Applications, vol. 281, 127503, 2025</p>
+            <div class="publication__links">
+              <a href="https://www.sciencedirect.com/science/article/pii/S095741742501125X" target="_blank" rel="noopener noreferrer" aria-label="Read ALPET paper on ScienceDirect">
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> ScienceDirect
+              </a>
+              <a href="https://arxiv.org/abs/2502.03292" target="_blank" rel="noopener noreferrer" aria-label="Read ALPET paper on arXiv" style="margin-left: 12px;">
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> arXiv
+              </a>
+            </div>
+          </li>
+          <li class="publication">
+            <h3 class="publication__title">Providing Citations to Support Fact-Checking: Contextualizing Detection of Sentences Needing Citation on Small Wikipedias</h3>
+            <p class="publication__authors">Aida Halitaj, Arkaitz Zubiaga</p>
+            <p class="publication__venue">Natural Language Processing Journal, vol. 8, 100093, 2024</p>
+            <div class="publication__links">
+              <a href="https://www.sciencedirect.com/science/article/pii/S2949719124000414" target="_blank" rel="noopener noreferrer" aria-label="Read paper on ScienceDirect">
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> ScienceDirect
+              </a>
+            </div>
+          </li>
+          <li class="publication">
+            <h3 class="publication__title">Towards Automating Citation Worthiness Detection for Sentences in Low-Resource Languages</h3>
+            <p class="publication__authors">Aida Halitaj</p>
+            <p class="publication__venue">PhD Thesis, Queen Mary University of London, 2025</p>
+            <div class="publication__links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=K8Fv15cAAAAJ&citation_for_view=K8Fv15cAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener noreferrer" aria-label="View thesis on Google Scholar">
+                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i> Google Scholar
+              </a>
+            </div>
+          </li>
+          <li class="publication">
+            <h3 class="publication__title">Syntactic Features of Blaming in Social Media</h3>
+            <p class="publication__authors">Aida Halitaj</p>
+            <p class="publication__venue">MSc Thesis, National Tsing Hua University, 2019</p>
+            <div class="publication__links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=K8Fv15cAAAAJ&citation_for_view=K8Fv15cAAAAJ:u5HHmVD_uO8C" target="_blank" rel="noopener noreferrer" aria-label="View thesis on Google Scholar">
+                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i> Google Scholar
+              </a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Resume / CV ===== -->
+    <section class="resume" id="resume">
+      <div class="container fade-in">
+        <h2 class="section__title">Resume</h2>
+        <p>Data Scientist &amp; AI Engineer at BT Group. PhD in Computer Science from Queen Mary University of London, specialising in NLP and few-shot learning. Experience across research, startups, and enterprise — from building ML pipelines on AWS to publishing in top Elsevier journals.</p>
+        <button class="btn btn--primary" id="cv-request-btn" aria-label="Request CV via form">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> Request my CV
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== Blog ===== -->
+    <section class="blog bg-warm" id="blog">
+      <div class="container fade-in">
+        <h2 class="section__title">Blog</h2>
+        <div class="blog__placeholder">
+          <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+          <p>Coming Soon</p>
+          <p>I'll be sharing thoughts on NLP research, data science, and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact" id="contact">
+      <div class="container fade-in">
+        <h2 class="section__title">Contact</h2>
+        <p>Feel free to reach out — I'm always open to interesting conversations and collaborations.</p>
+        <div class="contact__links">
+          <a href="https://github.com/aidahalitaj" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/aidahalitaj/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+          <a href="mailto:halitajaida@gmail.com" aria-label="Send email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email
+          </a>
+          <a href="https://scholar.google.com/citations?user=K8Fv15cAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile">
+            <i class="fa-brands fa-google-scholar" aria-hidden="true"></i> Google Scholar
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== CV Request Modal ===== -->
+  <div class="modal-overlay" id="cv-modal" aria-hidden="true" role="dialog" aria-labelledby="cv-modal-title">
+    <div class="modal">
+      <button class="modal__close" id="cv-modal-close" aria-label="Close form">&times;</button>
+      <h3 class="modal__title" id="cv-modal-title">Request my CV</h3>
+      <p class="modal__desc">Leave your details and I'll send it over.</p>
+      <form action="https://formsubmit.co/halitajaida@gmail.com" method="POST" class="modal__form">
+        <input type="hidden" name="_subject" value="CV Request — via Portfolio">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://aidahalitaj.github.io/#resume">
+        <input type="text" name="_honey" style="display:none">
+        <div class="modal__field">
+          <label for="cv-name">Name</label>
+          <input type="text" id="cv-name" name="name" required placeholder="Your name">
+        </div>
+        <div class="modal__field">
+          <label for="cv-email">Email</label>
+          <input type="email" id="cv-email" name="email" required placeholder="you@example.com">
+        </div>
+        <div class="modal__field">
+          <label for="cv-message">Message <span class="optional">(optional)</span></label>
+          <textarea id="cv-message" name="message" rows="3" placeholder="What role or opportunity is this for?"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary modal__submit">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Aida Halitaj. Built with care in London.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
